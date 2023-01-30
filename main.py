@@ -94,14 +94,14 @@
 #      term: 5 / number: 5
 #      etc.
 # Hint: The next number is found by adding the two numbers before it
-a = 0
-b = 1
-num = 0 
-for i in range(50):
-    print(i, num)
-    a = b
-    b = num
-    num = a + b
+# a = 0
+# b = 1
+# num = 0 
+# for i in range(50):
+#     print(i, num)
+#     a = b
+#     b = num
+#     num = a + b
 
 # exercise-06 What's the  Season?
 
@@ -123,3 +123,25 @@ for i in range(50):
 # if input_month in ('Jan', 'Feb', 'Mar'):
 # After setting the likely season, you can use another if...elif...else statement to "adjust" if
 # the day number falls within a certain range.
+
+month = input('Enter the month of the season (Jan - Dec): ').lower()
+day = int(input('Enter the day of the month: '))
+
+if month in ('January', 'February', 'March'):
+     season = 'Winter'
+elif month in ('April', 'May', 'June'):
+    season = 'Spring'
+elif month in ('July', 'August', 'September'):
+    season = 'Summer'
+else:
+    season = 'Fall'
+
+if (month == 'March') and (day > 19):
+    season = 'Spring'
+elif (month == 'June') and (day >20):
+    season = 'Summer'
+elif (month == 'September') and (day > 21):
+    season = 'Fall'
+elif (month == 'December') and (day > 20):
+    season = 'Winter'
+    print(f'{month} {day} is in {season}')
