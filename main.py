@@ -11,7 +11,7 @@
 # Hints:  Use the in operator to check if a character is in another string
 #         For example, if some_char in 'abc':
 # letter = input('Enter a letter from the alphabet: ').lower()
-# vowels = 'aeiou' 
+# vowels = 'aeiou'
 # consonants = 'bcdfghjklmnpqrstvwxyz'
 
 # if letter in vowels:
@@ -30,11 +30,11 @@
 #      - What you entered is xx characters long
 # 3. Return to step 1, unless the word 'quit' was entered.
 
-phrase = ''
-while phrase != 'quit':
-    phrase = input('Please enter a word or phrase: ').lower()
-    print(f'What you entered is {phrase} characters long')
-    
+# phrase = ''
+# while phrase != 'quit':
+#     phrase = input('Please enter a word or phrase: ').lower()
+#     print(f'What you entered is {len{phrase}} characters long')
+
 # exercise-03 Calculate Dog Years
 
 # Write the code that:
@@ -46,6 +46,14 @@ while phrase != 'quit':
 # 3. Prints the answer in the following format:
 #      The dog's age in dog years is xx
 # Hint:  Use the int() function to convert the string returned from input() into an integer
+
+human_age = int(input("Input a dog's age in human years: "))
+
+if human_age <= 2:
+    dog_age = human_age * 10
+else:
+    dog_age = (2 * 10 ) + ( human_age - 2) * 7
+print(f"The dog's age in dog years is {dog_age}")
 
 
 # exercise-04 What kind of Triangle?
@@ -64,7 +72,6 @@ while phrase != 'quit':
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
 
 
-
 # exercise-05 Fibonacci sequence for first 50 terms
 
 # Write the code that:
@@ -78,7 +85,6 @@ while phrase != 'quit':
 #      term: 5 / number: 5
 #      etc.
 # Hint: The next number is found by adding the two numbers before it
-
 
 
 # exercise-06 What's the  Season?
@@ -101,4 +107,3 @@ while phrase != 'quit':
 # if input_month in ('Jan', 'Feb', 'Mar'):
 # After setting the likely season, you can use another if...elif...else statement to "adjust" if
 # the day number falls within a certain range.
-
