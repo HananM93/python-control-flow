@@ -70,17 +70,17 @@
 #      isosceles - two sides are the same length
 # 3. Print a message such as:
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
-A = input('Triangle side a: ')
-B = input('Triangle side b: ')
-C = input('Triangle side c: ')
+# A = input('Triangle side a: ')
+# B = input('Triangle side b: ')
+# C = input('Triangle side c: ')
 
-if A == B == C:
-    print(f'A triangle with sides of {A}, {B} & {C} is a equalateral triangle')
-elif A == B or B == C or C == A:
-    print(f'A triangle with sides of {A}, {B} & {C} is a isosceles triangle')
-else:
-    print(f'A triangle with sides of {A}, {B} & {C} is a scalene triangle')
-    
+# if A == B == C:
+#     print(f'A triangle with sides of {A}, {B} & {C} is a equalateral triangle')
+# elif A == B or B == C or C == A:
+#     print(f'A triangle with sides of {A}, {B} & {C} is a isosceles triangle')
+# else:
+#     print(f'A triangle with sides of {A}, {B} & {C} is a scalene triangle')
+
 # exercise-05 Fibonacci sequence for first 50 terms
 
 # Write the code that:
@@ -94,7 +94,14 @@ else:
 #      term: 5 / number: 5
 #      etc.
 # Hint: The next number is found by adding the two numbers before it
-
+a = 0
+b = 1
+num = 0 
+for i in range(50):
+    print(i, num)
+    a = b
+    b = num
+    num = a + b
 
 # exercise-06 What's the  Season?
 
