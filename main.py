@@ -47,13 +47,13 @@
 #      The dog's age in dog years is xx
 # Hint:  Use the int() function to convert the string returned from input() into an integer
 
-human_age = int(input("Input a dog's age in human years: "))
+# human_age = int(input("Input a dog's age in human years: "))
 
-if human_age <= 2:
-    dog_age = human_age * 10
-else:
-    dog_age = (2 * 10 ) + ( human_age - 2) * 7
-print(f"The dog's age in dog years is {dog_age}")
+# if human_age <= 2:
+#     dog_age = human_age * 10
+# else:
+#     dog_age = (2 * 10 ) + ( human_age - 2) * 7
+# print(f"The dog's age in dog years is {dog_age}")
 
 
 # exercise-04 What kind of Triangle?
@@ -70,8 +70,17 @@ print(f"The dog's age in dog years is {dog_age}")
 #      isosceles - two sides are the same length
 # 3. Print a message such as:
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
+A = input('Triangle side a: ')
+B = input('Triangle side b: ')
+C = input('Triangle side c: ')
 
-
+if A == B == C:
+    print(f'A triangle with sides of {A}, {B} & {C} is a equalateral triangle')
+elif A == B or B == C or C == A:
+    print(f'A triangle with sides of {A}, {B} & {C} is a isosceles triangle')
+else:
+    print(f'A triangle with sides of {A}, {B} & {C} is a scalene triangle')
+    
 # exercise-05 Fibonacci sequence for first 50 terms
 
 # Write the code that:
